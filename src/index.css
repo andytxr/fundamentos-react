@@ -1,12 +1,18 @@
 body{
 
-    background-color: blue;
-    
+    background-color: black;
+
 }
 
 div{
 
     text-align: center;
     color: white;
+
+}
+
+h1, h2, h3 {
+
+    font-weight: 300;
 
 }

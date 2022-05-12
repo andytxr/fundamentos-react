@@ -1,23 +1,47 @@
 import React from "react";
 
-import First from './components/basics/First'
-import Parameters from './components/basics/Parameters'
-import Fragments from './components/basics/Fragments'
+import First from './components/basics/First';
+import Parameters from './components/basics/Parameters';
+import Fragments from './components/basics/Fragments';
+import Random from './components/basics/Random';
+import Card from './components/basics/layout/Card';
 
-export default function App(props){
+import './App.css';
+
+export default () => {
+
     return(
 
-        <div id="app">
+        <div className="app">
 
-            <Fragments/>    
-            <Parameters title="São Paulo " surname="Soberano" subtitle="6-3-3" country="brasileiro" mundial={3}/>
-            <Parameters title="Real Madrid" surname="Merengue" country="espanhol" subtitle="37-13-6" mundial={6}/>
-            <Parameters title="Chelsea" surname="Blue" subtitle="7-2-1" country="inglês" mundial={1}/>
-            <First></First>
+            <div className="cards">
+
+                <Card title=" #4 - Random" color="#999bf1">
+                    <Random max={7} min={1}/>
+                </Card>
+
+                <Card title=" #3 - Fragments" color="#11e7e0">
+                    <Fragments/>   
+                </Card>
+
+                <Card title=" #2 - Parameters" color="#3660d1">
+                    <Parameters title="São Paulo " surname="Soberano" subtitle="6-3-3" country="brasileiro" mundial={3}/>
+                </Card>
+                
+                <Card title=" #1 - First Component">
+                    <First></First>
+                </Card>
+
+            </div>
 
         </div>
 
-    )
+    );
+    
+}
+
     
 
-}
+
+    
+
