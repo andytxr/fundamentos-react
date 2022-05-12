@@ -11,6 +11,7 @@ export default function First(){
             <p>   
                 {msg}
             </p>
-        </div>);
+        </div>
+    );
 
 }
