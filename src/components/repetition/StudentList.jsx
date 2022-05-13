@@ -1,6 +1,6 @@
 import React from "react";
 
-import student from '../../data/data'
+import student from '../../data/students'
 
 export default function StudentList (props){
 

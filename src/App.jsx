@@ -8,6 +8,9 @@ import Card from './components/layout/Card';
 import Family from "./components/basics/Family";
 import FamilyMember from "./components/basics/FamilyMember";
 import StudentList from "./components/repetition/StudentList";
+import StuffTable from "./components/repetition/StuffTable";
+import PairOrOdd from "./components/conditions/PairOrOdd";
+import UserInfo from "./components/conditions/UserInfo";
 
 import './App.css';
 
@@ -17,7 +20,24 @@ export default () => (
 
         <div className="cards">
 
-        <Card title=" #6 - Repetition (Student List)" color="#d44e69">
+            <Card title=" #8 - Conditional (User Info)" color="#d47fa9">
+                <UserInfo user={{
+
+                    name: 'Deco'
+
+                }}></UserInfo>
+                <UserInfo></UserInfo>
+            </Card>
+
+            <Card title=" #7 - Conditional (Pair or Odd)" color="#d47fa9">
+                <PairOrOdd num={33}></PairOrOdd>
+            </Card>
+
+            <Card title=" #7 - Repetition (Stuff Table)" color="#d44e69">
+                <StuffTable></StuffTable>
+            </Card>
+
+            <Card title=" #6 - Repetition (Student List)" color="#7d0600">
                 <StudentList></StudentList>
             </Card>
 
