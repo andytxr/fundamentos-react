@@ -4,15 +4,25 @@ import First from './components/basics/First';
 import Parameters from './components/basics/Parameters';
 import Fragments from './components/basics/Fragments';
 import Random from './components/basics/Random';
-import Card from './components/layout/Card';
 import Family from "./components/basics/Family";
 import FamilyMember from "./components/basics/FamilyMember";
+
+import Card from './components/layout/Card';
+
 import StudentList from "./components/repetition/StudentList";
 import StuffTable from "./components/repetition/StuffTable";
+
 import PairOrOdd from "./components/conditions/PairOrOdd";
 import UserInfo from "./components/conditions/UserInfo";
+
 import DirectParent from "./components/communications/DirectParent";
 import IndirectParent from "./components/communications/IndirectParent";
+
+import Input from "./components/forms/Input";
+
+import Counter from "./components/counter/Counter";
+
+import Mega from "./components/mega/Mega";
 
 import './App.css';
 
@@ -23,6 +33,18 @@ export default () => (
 
         <div className="cards">
 
+            <Card title=" #14 - Mega-Sena" color="#32a83a">
+                <Mega></Mega>
+            </Card>
+
+            <Card title=" #13 - Counter" color="#ba323b">
+                <Counter initNumber={0}></Counter>
+            </Card>
+
+            <Card title=" #12 - Controlled Component (Input)" color="#424242">
+                <Input></Input>
+            </Card>
+
             <Card title=" #11 - Indirect Communication" color="#ab7502">
                 <IndirectParent></IndirectParent>
             </Card>
@@ -31,7 +53,7 @@ export default () => (
                 <DirectParent></DirectParent>
             </Card>
 
-            <Card title=" #9 - Conditional (User Info)" color="#d47fa9">
+            <Card title=" #9 - Conditional (User Info)" color="#0062a3">
                 <UserInfo user={{
 
                     name: 'Deco'
