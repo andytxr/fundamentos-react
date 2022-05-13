@@ -11,8 +11,11 @@ import StudentList from "./components/repetition/StudentList";
 import StuffTable from "./components/repetition/StuffTable";
 import PairOrOdd from "./components/conditions/PairOrOdd";
 import UserInfo from "./components/conditions/UserInfo";
+import DirectParent from "./components/communications/DirectParent";
+import IndirectParent from "./components/communications/IndirectParent";
 
 import './App.css';
+
 
 export default () => (
 
@@ -20,7 +23,15 @@ export default () => (
 
         <div className="cards">
 
-            <Card title=" #8 - Conditional (User Info)" color="#d47fa9">
+            <Card title=" #11 - Indirect Communication" color="#ab7502">
+                <IndirectParent></IndirectParent>
+            </Card>
+
+            <Card title=" #10 - Direct Communication" color="#33355c">
+                <DirectParent></DirectParent>
+            </Card>
+
+            <Card title=" #9 - Conditional (User Info)" color="#d47fa9">
                 <UserInfo user={{
 
                     name: 'Deco'
@@ -29,7 +40,7 @@ export default () => (
                 <UserInfo></UserInfo>
             </Card>
 
-            <Card title=" #7 - Conditional (Pair or Odd)" color="#d47fa9">
+            <Card title=" #8 - Conditional (Pair or Odd)" color="#d47fa9">
                 <PairOrOdd num={33}></PairOrOdd>
             </Card>
 
